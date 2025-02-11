@@ -205,6 +205,7 @@ dialog {
 section {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 2em 2em;
   height: 45vh;
 }
@@ -213,6 +214,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   margin-top: 1em;
+  justify-content: center;
 }
 
 .card {
