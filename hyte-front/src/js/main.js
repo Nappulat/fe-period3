@@ -3,6 +3,7 @@ import '../css/snackbar.css';
 import { getItems } from './items';
 import { getUsers, addUser, findUser } from './users';
 import { getData, firstApi, synchronousFunction, synchronousFunction2 } from './test';
+import { testData } from './entries';
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -34,3 +35,11 @@ addUserForm.addEventListener('click', addUser);
 
 const findById = document.querySelector('#search-id');
 findById.addEventListener('click', findUser);
+
+//const entryTest = document.querySelectorAll('card-diary');
+//entryTest.forEach(testData);
+
+const printEntriesBtn = document.querySelector('.get_entries');
+printEntriesBtn.addEventListener('click', testData);
+
+//testData();

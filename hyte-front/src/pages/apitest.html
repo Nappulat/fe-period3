@@ -140,17 +140,68 @@
           </form>
         </div>
       </div>
-
-      <!-- The actual snackbar -->
-      <div id="snackbar">Some text some message..</div>
       <!-- Assigment week 4, find by ID -->
       <form class="print-user">
         <label for="search-bar">Find user:</label>
         <input type="number" min="0" id="user-id" name="u-id" placeholder="ID Number" />
         <button type="submit" id="search-id">Hae</button>
     </form>
+
+    <h3>Flexboxilla tehdyt kortit - Runko</h3>
+    <!-- kortit sisältävä flex parent -->
+    <section class="card-area">
+	      <!-- yksittäinen kortti -->
+	      <div class="card">
+		        <!-- vasen puoli jossa kuva -->
+		        <div class="card-img">
+			          <img src="/images/pexels-pixabay-221247.jpg" alt="image"/>
+		        </div>
+
+		        <!-- oikea puoli jossa päiväkirjamerkintä-->
+		        <div class="card-diary">
+			        <!-- tänne myös flexbox rakenne -->
+			        Tänne dataa
+		        </div>
+	      </div>
+        <!-- yksittäinen kortti -->
+	      <div class="card">
+          <!-- vasen puoli jossa kuva -->
+          <div class="card-img">
+              <img src="/images/pexels-pixabay-221247.jpg" alt="image"/>
+          </div>
+
+          <!-- oikea puoli jossa päiväkirjamerkintä-->
+          <div class="card-diary">
+            <!-- tänne myös flexbox rakenne -->
+            Tänne dataa
+          </div>
+      </div>
+    </section>
+
+    <h3>Flexboxilla tehty kortti + Fetch + Itse luodut elementit</h3>
+    <button class="get_entries">Hae päiväkirjamerkinnät</button>
+    <section class="card-area2"></section>
+
     </main>
 
+     <!-- The actual snackbar -->
+     <div id="snackbar">Some text some message..</div>
+
+     <dialog class="info_dialog">
+      <p>
+        <!-- tähän täytetään käyttäjän tiedot -->
+        <!-- # Get user by id -->
+        <!-- GET http://127.0.0.1:3000/api/users/1 -->
+
+
+        <!-- 
+        <div>UserID: <span></span></div>
+        <div>UserName: <span></span></div>
+        <div>Email: <span></span></div>
+        <div>Role: <span></span></div> -->
+      </p>
+      <button autofocus>Close</button>
+    </dialog>
     <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>
