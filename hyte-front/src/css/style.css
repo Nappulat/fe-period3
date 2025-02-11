@@ -227,6 +227,7 @@ section {
   box-sizing: border-box;
   border-radius: 30px;
   width: 45%;
+  min-width: 300px;
 }
 
 .card-diary {
